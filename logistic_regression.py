@@ -62,7 +62,7 @@ class Model():
         return y
 
     @staticmethod
-    def evaluate(self, y_true: np.ndarray, y_predict: np.ndarray) ->float:
+    def evaluate(y_true: np.ndarray, y_predict: np.ndarray) ->float:
         errors = 0
         for i in range(y_predict.shape[0]):
             if y_predict[i] != y_true[i]:
